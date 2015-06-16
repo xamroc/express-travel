@@ -14,6 +14,11 @@ app.get('/about', function(req, res){
   res.send('Marco has much fail. Read it all here.');
 });
 
+app.get('/about/contact', function(req, res){
+  res.type('text/plain');
+  res.send('Call me.');
+});
+
 // custom 404 page
 app.use(function(req, res){
   res.type('text/plain');
